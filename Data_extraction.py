@@ -1,35 +1,3 @@
-# import yfinance as yf
-# import os
-
-# # Define the stock ticker symbol (Change this to any stock symbol you want)
-# ticker_symbol = "AAPL"  # Example: Apple Inc.
-
-# # Fetch data from Yahoo Finance
-# company = yf.Ticker(ticker_symbol)
-
-# # Fetch historical stock prices (Last 1 month)
-# stock_prices = company.history(period="1mo")
-# income_statement = company.financials  # Income Statement
-# balance_sheet = company.balance_sheet  # Balance Sheet
-# cash_flow = company.cashflow  # Cash Flow Statement
-
-# # Create a 'data' folder if it doesn't exist
-# data_folder = "data"
-# os.makedirs(data_folder, exist_ok=True)
-
-# # Save data to CSV files in the 'data' folder
-# stock_prices.to_csv(os.path.join(data_folder, "stock_prices.csv"))
-# income_statement.to_csv(os.path.join(data_folder, "income_statement.csv"))
-# balance_sheet.to_csv(os.path.join(data_folder, "balance_sheet.csv"))
-# cash_flow.to_csv(os.path.join(data_folder, "cash_flow.csv"))
-
-# # Print sample outputs
-# print("Stock Prices:\n", stock_prices.head())
-# print("\nIncome Statement:\n", income_statement)
-# print("\nBalance Sheet:\n", balance_sheet)
-# print("\nCash Flow Statement:\n", cash_flow)
-
-# print(f"\nData successfully fetched and saved in the '{data_folder}' folder!")
 import yfinance as yf
 import kaggle
 import pandas as pd

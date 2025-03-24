@@ -24,7 +24,7 @@ import pandas as pd
 import mysql.connector
 
 # Load Dataset
-file_path = "F:\Revature_Project\data\final_financial_data.csv"
+file_path = r"F:\Revature_Project\data\final_financial_data.csv"
 df = pd.read_csv(file_path)
 
 # MySQL Connection Config
